@@ -1,7 +1,7 @@
 # Cricket-Stats - Data Science 
 Predicting Results of IPL Matches using Machine Learning
 
-# Firstly let's import packages.
+ Firstly let's import packages.
 
 ``` 
 import pandas as pd
@@ -11,7 +11,7 @@ import seaborn as sns
 import array as arr
 ```
 
-# Adding CSV files Deliveries and Matches
+ Adding CSV files Deliveries and Matches
 
 ```
 deliveries = pd.read_csv('/content/deliveries.csv')
@@ -19,7 +19,7 @@ matches = pd.read_csv('/content/matches.csv')
 
 ```
 
-# Parse and Preprocess the Data
+ Parse and Preprocess the Data
 
 ```
 deliveries.head()
@@ -28,7 +28,7 @@ matches.head()
 
 ```
 
-# Data that contains - null values
+ Data that contains - null values
 
 ```
 deliveries.isnull().sum()
@@ -43,7 +43,7 @@ matches.dropna()
 
 ```
 
-# Number of Rows and Columns present in Dataset
+ Number of Rows and Columns present in Dataset
 
 ```
 deliveries.shape
@@ -65,7 +65,7 @@ sns.barplot(y = data.index, x = data, orient='h');
 
 ```
 
-# Top Batsmen in the Tournament
+ Top Batsmen in the Tournament
 
 ```
 top_players = matches.player_of_match.value_counts()[:1]
@@ -78,7 +78,7 @@ plt.show()
 
 ```
 
-# Toss Desision
+ Toss Desision
 
 ```
 toss = matches['toss_winner'] == matches['winner']
@@ -92,7 +92,7 @@ sns.countplot(matches.toss_decision[matches.toss_winner == matches.winner])
 
 ```
 
-# Which season had most number of matches?
+ Which season had most number of matches?
 
 ```
 sns.countplot(x='season', data=matches)
@@ -100,7 +100,7 @@ plt.show()
 
 ```
 
-# Top player of the match Winners
+ Top player of the match Winners
 
 ```
 top_players = matches.player_of_match.value_counts()[:10]
@@ -114,7 +114,7 @@ plt.show()
 
 ```
 
-# KMeans Clustering 
+ KMeans Clustering 
 
 ```
 from matplotlib import style
