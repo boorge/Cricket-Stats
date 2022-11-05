@@ -127,12 +127,15 @@ plt.scatter(x,y)
 ```
 
 Matches winner value counts
+
 ![image](https://user-images.githubusercontent.com/78689154/200138456-b3197d88-c5c5-4642-93b0-a4ee4c66d34f.png)
 
 Top player of the match Winners
+
 ![image](https://user-images.githubusercontent.com/78689154/200138477-46ab3ed1-11de-4826-a564-fbd6a4c6e0e6.png)
 
 KMeans Clustering 
+
 ![image](https://user-images.githubusercontent.com/78689154/200138501-811b3dba-1a76-4132-be30-947cc8842d86.png)
 
 
